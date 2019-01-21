@@ -3,3 +3,6 @@
 /Ellipse.class
 /Graphic.class
 /TestCompositePattern.class
+/FileComponent.class
+/FileLeaf.class
+/FolderComposite.class

@@ -1,30 +1,20 @@
 package emsa.pattern.structural.composite;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class TestCompositePattern {
 
   /** Client */
   public static void main(String[] args) {
-    // Initialize ellipses
-    Ellipse ellipse1 = new Ellipse();
-    Ellipse ellipse2 = new Ellipse();
+    FileComponent file1 = new FileLeaf("file 1", 10);
+    FileComponent file2 = new FileLeaf("file 2", 5);
+    FileComponent file3 = new FileLeaf("file 3", 12);
 
-    // Initialize circle
-    Circle circle = new Circle();
+    List<FileComponent> files = Arrays.asList(file1, file2, file3);
+    FileComponent folder = new FolderComposite(files);
+    folder.showProperty();
+    System.out.println("Total Size: " + folder.totalSize());
 
-    // Initialize three composite graphics
-    CompositeGraphic graphic = new CompositeGraphic();
-    CompositeGraphic graphic1 = new CompositeGraphic();
-    CompositeGraphic graphic2 = new CompositeGraphic();
-
-    // Composes the graphics
-    graphic1.add(ellipse1);
-    graphic1.add(ellipse2);
-    graphic1.add(graphic2);
-
-    graphic.add(graphic1);
-    graphic.add(circle);
-
-    graphic.print();
-    graphic.draw("red");
   }
 }

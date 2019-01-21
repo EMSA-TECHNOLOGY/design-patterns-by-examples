@@ -13,7 +13,7 @@ public class ComputerFactory {
       break;
 
     default:
-      break;
+      throw new IllegalArgumentException("This type is unsupported");
     }
     
     return com;

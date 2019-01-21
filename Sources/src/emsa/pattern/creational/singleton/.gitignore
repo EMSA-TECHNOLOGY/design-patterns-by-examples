@@ -1,2 +1,4 @@
 /TestPattern.class
 /ThreadSafeSingleton.class
+/LazyInitializedSingleton.class
+/EagerInitializedSingleton.class
