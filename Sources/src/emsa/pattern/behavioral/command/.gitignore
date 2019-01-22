@@ -4,3 +4,9 @@
 /ShoppingCartVisitor.class
 /ShoppingCartVisitorImpl.class
 /TestPatternVisitor.class
+/Account.class
+/Command.class
+/OpenAccount.class
+/CloseAccount.class
+/BankApp.class
+/Client.class

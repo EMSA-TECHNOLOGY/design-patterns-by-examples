@@ -5,3 +5,8 @@
 /ChannelIterator.class
 /ChannelTypeEnum.class
 /TestPatternIterator.class
+/Item.class
+/ItemIterator.class
+/Menu.class
+/Menu$MenuItemIterator.class
+/Client.class

@@ -5,8 +5,8 @@ public abstract class User {
   protected String name;
 
   public User(ChatMediator med, String name) {
-      this.mediator = med;
-      this.name = name;
+    this.mediator = med;
+    this.name = name;
   }
 
   public abstract void send(String msg);
@@ -15,21 +15,21 @@ public abstract class User {
 
   @Override
   public int hashCode() {
-      return name.hashCode();
+    return name.hashCode();
   }
 
   @Override
   public boolean equals(Object obj) {
-      if (obj == null) {
-          return false;
+    if (obj == null) {
+      return false;
 
-      }
+    }
 
-      if (this.getClass() != obj.getClass()) {
-          return false;
-      }
+    if (this.getClass() != obj.getClass()) {
+      return false;
+    }
 
-      User user = (User) obj;
-      return name.equals(user.name);
+    User user = (User) obj;
+    return name.equals(user.name);
   }
 }
